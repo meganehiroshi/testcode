@@ -1,13 +1,12 @@
 <html>
-	<span class="telep">000-0000-0000</span>
-	<a href="tel:00000000000" class="tel2">33</a>
+	<a href="tel:00000000000" class="tel2">00000000000</a>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> 
 	<!--jQueryの読み込みの後に、以下のコードを追加 -->
 	<script>
 	$(function() {
-		alert("aa");
-		//$(".tel2").click();
-		location.href = "tel:00000000000";
+		var val = $(".tel2").attr("href");
+		alert(val);
+		location.href = val;
 	});
 	</script>
 </html>
