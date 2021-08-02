@@ -23,7 +23,16 @@
 	$(function() {
 		var val = $(".tel2").attr("href");
 		alert(val);
-		location.href = val;
+		//location.href = val;
+		
+		    var val2 = $.ajax({
+		      type: 'GET',
+		      url:  "https://clova.line.me/webapi/event/list",
+		      async: false,
+		      dataType: 'json'
+		    });
+		console.log(val2);
+		
 	});
 	</script>
 </html>
